@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic — Jasmin Steinbrecher</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5l9 30 32 4-24 22 7 32-28-17-28 17 7-32-24-22 32-4z' fill='%2300E5FF'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">JS<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="academic.html" class="nav__link">Academic</a></li>
+        <li><a href="practical.html" class="nav__link">Practical</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">&#x1F319;</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Research and academic work</h1>
+      <p>Check out projects for more papers on specific projects!</p>
+    </div>
+  </section>
+
+  <section class="main-content">
+    <div class="container">
+      <div class="cards">
+        <article class="card">
+          <p class="card__index">PUB_003</p>
+          <h2 class="card__title">Safe Controller Synthesis for UAV Trajectories under Stochastic Disturbances</h2>
+          <p class="card__meta">Master Thesis &mdash; UAV Trajectory Planning &mdash; Gazebo Simulation</p>
+          <p class="card__description">This thesis develops a probabilistic safety framework for UAV trajectory planning under stochastic disturbances such as wind and sensor noise. It combines stochastic reachability analysis with deterministic path planning by deriving high-confidence bounds on trajectory deviations and embedding them into obstacle inflation via a set-erosion approach. This allows standard graph-based planners (e.g., A*) to generate trajectories that remain safe with a specified probability while avoiding the computational complexity of full stochastic optimization. The method is implemented and tested in a Gazebo–ArduPilot simulation using realistic Dryden and von Kármán turbulence models. Results show bounded tracking error, stable closed-loop behavior, and successful mission execution under significant wind disturbances, demonstrating practical probabilistic safety guarantees for UAV operation.</p>
+          <video controls preload="metadata" style="width:100%; border-radius:2px; margin:1rem 0; border:1px solid var(--border);">
+            <source src="assets/projects/PUB3-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="card__links">
+            <a href="https://github.com/jasminsteinbrecher/UAV-Trajectories-Under-Stochastic-Disturbances.git">GITHUB</a>
+            <a href="assets/projects/PUB3-report.pdf">PDF</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PUB_002</p>
+          <h2 class="card__title">Flood Risk Mapping for Demining Efforts in Iraq</h2>
+          <p class="card__meta">Bachelor Thesis &mdash; UN Security Project &mdash; Iraq &mdash; Mines</p>
+          <p class="card__description">Developed a GIS based flood risk mapping framework to enhance demining operations in Iraq’s Diyala Governorate as part of a UN security project. Used ArcGIS and coded Python applications to ingest and process environmental and hydrological data such as elevation, precipitation, land cover, and stream proximity. Integrated multi criteria decision analysis to identify areas where seasonal flooding could displace landmines and produced hazard maps to guide resource allocation and improve safety for both civilians and demining teams.</p>
+          <div class="card__images">
+            <img src="assets/projects/PUB2.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PUB1.png">
+          </div>
+          <div class="card__links">
+            <a href="assets/projects/PUB2-report.pdf">PDF</a>
+            <a href="https://github.com/jasminsteinbrecher/Thesis.git">GITHUB</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PUB_001</p>
+          <h2 class="card__title">Application of Computer Vision in Environmental Monitoring and Astronomy</h2>
+          <p class="card__meta">Engineering Project &mdash; Deep Learning &mdash; Computer Vision &mdash; Satellite & Astronomy Applications</p>
+          <p class="card__description">I developed a comprehensive research project applying advanced computer vision techniques to both environmental monitoring and astronomy. The work explores neural networks including perceptrons, convolutional neural networks, recurrent neural networks, transformers, and attention mechanisms and demonstrates their use in real world scenarios such as flood detection from satellite imagery, deforestation analysis, predicting photometric properties of celestial objects, and classifying galaxy morphology with rotation invariant convolutional neural networks. The project integrates literature review, dataset preprocessing, model design, performance evaluation, and visualizations to combine domain specific knowledge with deep learning methodologies for Earth based and space based observational challenges.</p>
+          <div class="card__links">
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="">
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next">&#8250;</button>
+    <span class="lightbox__counter" id="lightbox-counter"></span>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      &copy; Ad astra, one project at a time.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

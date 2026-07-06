@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical — Jasmin Steinbrecher</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5l9 30 32 4-24 22 7 32-28-17-28 17 7-32-24-22 32-4z' fill='%2300E5FF'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">JS<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="academic.html" class="nav__link">Academic</a></li>
+        <li><a href="practical.html" class="nav__link">Practical</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">&#x1F319;</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Projects</h1>
+      <p>Things I've built</p>
+    </div>
+  </section>
+
+  <section class="main-content">
+    <div class="container">
+      <div class="cards">
+
+        <article class="card">
+          <p class="card__index">PRJ_012</p>
+          <h2 class="card__title">Asclepios VI</h2>
+          <p class="card__meta">Mission Control Software &mdash; Asclepios VI Analog Space Mission &mdash; EPFL</p>
+          <p class="card__description">I work as a Software Officer in the EPFL ASclepios analog space mission, supporting mission control operations in real time. My main responsibility is running and maintaining the YAMCS instance used for telemetry, command handling, and overall mission monitoring. I also designed the communication panel for this year’s mission, building on and improving the systems used in previous editions. On the operations side, I help manage the mission shift plan to ensure smooth coverage across all roles throughout the mission. Overall, the role combines software engineering, systems thinking, and hands-on mission operations in a space-analogue environment.</p>
+          <div class="card__images">
+          </div>
+          <div class="card__links">
+            <a href="https://github.com/jasminsteinbrecher/COMMS.git">COMMS-Github</a>
+            <a href="https://github.com/jasminsteinbrecher/YAMCS.git">YAMCS-Github</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_011</p>
+          <h2 class="card__title">Minimum Lap Time Optimization for a Double-Track Vehicle Model</h2>
+          <p class="card__meta">AE 6310 &mdash; Minimum Lap Time Optimization &mdash; Nonlinear Vehicle Dynamics</p>
+          <p class="card__description">This project implements a nonlinear optimal control framework to compute minimum lap time trajectories for a race vehicle using a double-track vehicle model. The problem is formulated in spatial coordinates and transcribed into a large-scale nonlinear program using direct collocation. The vehicle model includes nonlinear tire dynamics (Pacejka), aerodynamic effects, load transfer, and friction circle constraints to ensure physical realism. The optimization is solved using IPOPT within the AMIGO framework, producing optimal racing lines, velocity profiles, and control inputs for two circuits (Berlin Formula E and Sochi Autodrom). Results show that the optimizer fully exploits available tire friction and power limits while revealing distinct trade-offs between aggressive short-track driving and smoother high-speed circuit behavior.</p>
+          <div class="card__images">
+            <img src="assets/projects/PR11-1.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR11-1.png">
+            <img src="assets/projects/PR11-2.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR11-2.png">
+            <img src="assets/projects/PR11-3.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR11-3.png">
+          </div>
+          <div class="card__links">
+            <a href="assets/projects/PR11-report.pdf">Project Paper</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_010</p>
+          <h2 class="card__title">Resilient Secure Communication for Multi-UAV Systems under Network Attacks</h2>
+          <p class="card__meta">CS 6262 &mdash; Aerospace Security Research &mdash; UAV Swarms</p>
+          <p class="card__description">This project simulates multi-UAV swarm coordination under network-layer attacks using the W-MSR consensus algorithm. A custom Python-based simulator models drones exchanging state information over a k-nearest-neighbor communication topology inspired by MAVLink-based systems. The study evaluates how network connectivity, adversarial agents, and filtering parameters influence swarm convergence, stability, and cohesion. Malicious nodes inject falsified position data to simulate realistic attacks such as spoofing and false data injection. Results highlight the trade-off between robustness and connectivity, showing that sparse networks are highly vulnerable to fragmentation while dense networks improve resilience but introduce new communication-related risks.</p>
+          <div class="card__images">
+            <img src="assets/projects/PR10-1.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR10-1.png">
+            <img src="assets/projects/PR10-2.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR10-2.png">
+            <img src="assets/projects/PR10-3.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR10-3.png">
+          </div>
+          <div class="card__links">
+            <a href="assets/projects/PR10-report.pdf">Project Paper</a>
+          </div>
+        </article>
+        
+        <article class="card">
+          <p class="card__index">PRJ_009</p>
+          <h2 class="card__title">Aerospace Systems Engineering</h2>
+          <p class="card__meta">AE 6372 &mdash; Android Malware Detection &mdash; Unsupervised ML</p>
+          <p class="card__description">This course provided a comprehensive foundation in systems engineering, covering integrated product and process development, project scoping, quality function deployment, requirements analysis, model-based systems engineering, trade studies, risk management, robust design, and product lifecycle management.</p>
+          <p>In a capstone group project, we applied these principles to design a mission to Mars supporting future human exploration. Using MagicDraw and Paramagic, our team modeled the mission architecture, performed system-level calculations, and conducted trade studies to optimize subsystem selection, instrument payloads, and mission profiles. The mission concept focused on characterizing the Martian atmosphere, surveying terrain, and investigating potential surface and subsurface resources, while ensuring feasibility within a $1 billion budget. This project emphasized integrating technical requirements, scientific goals, cost, risk, and schedule to create a robust, high-impact space exploration mission.</p>
+          <div class="card__images">
+            <img src="assets/projects/PR9.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR9.png">
+          </div>
+          <div class="card__links">
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_008</p>
+          <h2 class="card__title">Data Analytics and Security</h2>
+          <p class="card__meta">INT 6450 &mdash; Android Malware Detection &mdash; Unsupervised ML</p>
+          <p class="card__description">In this course, our team developed a pipeline to detect malicious behavior in Android apps by combining deterministic list-matching with unsupervised machine learning. We ingested nested JSON scan data, extracting metadata, permissions, file system anomalies, and network activity, and structured it in a Pandas DataFrame. Network endpoints were checked against static threat lists and enriched with VirusTotal, URLScan.io, and AlienVault OTX to flag known threats. We then engineered numerical features from app metadata and applied Isolation Forest, Local Outlier Factor, and One-Class SVM to identify unusual patterns, enabling detection of both known and emerging threats.</p>
+          <div class="card__images">
+            <img src="assets/projects/PR8.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR8.png">
+          </div>
+          <div class="card__links">
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_007</p>
+          <h2 class="card__title">Computer Science and Engineering Algorithms</h2>
+          <p class="card__meta">CSE 6140 &mdash; Set Cover Problem &mdash; Algorithm Design</p>
+          <p class="card__description">Worked with a team to tackle the Set Covering Problem using both exact and heuristic methods. We implemented Branch and Bound, Greedy Approximation, Simulated Annealing, and Hill Climbing algorithms in Python and compared how they performed on different datasets. The project gave us hands-on experience with algorithm design, optimization techniques, and evaluating performance across different hardware setups.</p>
+          <div class="card__images">
+            <img src="assets/projects/PR7.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR7.png">
+          </div>
+          <div class="card__links">
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_006</p>
+          <h2 class="card__title">Iterative Methods for Systems of Equations</h2>
+          <p class="card__meta">MATH 6644 &mdash; Jacobi Methods &mdash; ILU Methods</p>
+          <p class="card__description">In this course, I explored solving large, sparse linear systems, like those in Markov chain models. I implemented the solvers myself and tested different preconditioners, comparing Jacobi and ILU methods for speed and accuracy. I also optimized performance by switching from dense to sparse matrices, which let me handle really large systems (up to 100,000 equations) without running into memory issues.</p>
+          <div class="card__images">
+            <img src="assets/projects/PR6.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR6.png">
+          </div>
+          <div class="card__links">
+          </div>
+        </article>
+        
+        <article class="card">
+          <p class="card__index">PRJ_005</p>
+          <h2 class="card__title">Air Breathing Propulsion System Design</h2>
+          <p class="card__meta">AE 6361 &mdash; NPSS &mdash; FLOPS</p>
+          <p class="card__description">In this course, I got to dive deep into how aerospace engines work, from thermodynamic cycles to full propulsion system design. I worked on three main projects: first, I coded a gas turbine simulation in Python using thermodynamic equations; then, I built the same turbine model in NASA’s NPSS software; and finally, I integrated NPSS with FLOPS to design an aircraft optimized for maximum range.</p>
+          <div class="card__images">
+            <img src="assets/projects/PR5.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR5.png">
+          </div>
+          <div class="card__links">
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_004</p>
+          <h2 class="card__title">Satellite Mission Planning and Earth Monitoring</h2>
+          <p class="card__meta">Student Project</p>
+          <p class="card__description">In this group project, we developed a system to detect and count cars in Munich parking lots to support the city’s goal of improving parking accessibility for residents and visitors. We researched current parking usage, identified high-demand areas, and provided data to inform decisions on where new parking infrastructure should be added. Our approach integrated satellite imaging, sensor data, and image analysis to estimate occupancy in existing lots. This work aimed to reduce congestion, improve traffic flow, and make parking in Munich a more seamless experience.</p>
+          <div class="card__images">
+          </div>
+          <div class="card__links">
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_003</p>
+          <h2 class="card__title">HyperWorks and HyperMesh</h2>
+          <p class="card__meta">FEM Project</p>
+          <p class="card__description">In my Aerospace Structures and Elements course, I learned how to use HyperWorks, including HyperMesh, a simulation and pre-processing suite for analyzing structural and thermal behavior, to evaluate aerospace components. For our main project, I modeled a wing, ran stress analyses, and verified that the structural loads stayed within safe limits, ensuring the design met safety and performance requirements.</p>
+          <div class="card__images">
+            <img src="assets/projects/PR3-1.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR3-1.png">
+            <img src="assets/projects/PR3-2.png" alt="Cannot Load. Sorry!" data-full="assets/projects/PR3-2.png">
+          </div>
+          <div class="card__links">
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_002</p>
+          <h2 class="card__title">SolidWorks</h2>
+          <p class="card__meta">CAD Project</p>
+          <p class="card__description">In my CAD course, I worked extensively with SolidWorks to create detailed 3D models and technical drawings. I completed several assignments designing mechanical parts from scratch, making sure each model met precise dimensions and tolerances for manufacturing. The course focused on applying design intent, engineering standards, and manufacturing constraints, which helped me build practical skills in producing accurate, production-ready technical documentation.</p>
+          <div class="card__images">
+            <img src="assets/projects/SolidWorks.png" alt="Cannot Load. Sorry!" data-full="assets/projects/SolidWorks.png">
+          </div>
+          <div class="card__links">
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">PRJ_001</p>
+          <h2 class="card__title">TUM Tech Challenge 2021</h2>
+          <p class="card__meta">TUM Tech Challenge &mdash; Figma &mdash; 2021</p>
+          <p class="card__description">In a group project, we developed Ecolime, an app designed to provide EV drivers with affordable, climate-neutral charging options while reducing energy waste. Using Figma, we created the app's interface and user experience, incorporating gamification features such as avatars, coins, and rankings to incentivize green charging behavior.</p>
+          <p style="margin-top:0.75rem;">The platform connects EV drivers with renewable energy from private homeowners and businesses, allowing users to charge with 100% green energy or offset CO2 emissions via environmental organizations. Our team conducted market analysis, competitor research, and designed a flexible infrastructure that integrates both prosumer and public charging stations.</p>
+          <div class="card__images">
+            <img src="assets/projects/tum-1.png" alt="Cannot Load. Sorry!" data-full="assets/projects/tum-1.png">
+            <img src="assets/projects/tum-2.png" alt="Cannot Load. Sorry!" data-full="assets/projects/tum-2.png">
+            <img src="assets/projects/tum-3.png" alt="Cannot Load. Sorry!" data-full="assets/projects/tum-3.png">
+          </div>
+          <div class="card__links">
+            <a href="https://github.com/fabihoe/EColime.git">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="">
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next">&#8250;</button>
+    <span class="lightbox__counter" id="lightbox-counter"></span>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      Ad astra, one project at a time.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

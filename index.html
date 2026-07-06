@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasmin Steinbrecher — Aerospace Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5l9 30 32 4-24 22 7 32-28-17-28 17 7-32-24-22 32-4z' fill='%2300E5FF'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">JS<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="academic.html" class="nav__link">Academic</a></li>
+        <li><a href="practical.html" class="nav__link">Practical</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">&#x1F319;</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+    <div class="container hero__inner">
+      <div class="hero__image-wrapper">
+        <img src="assets/profile.jpg" alt="Jasmin Steinbrecher" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="hero__image-placeholder" style="display:none;">JS</div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Available for work
+        </div>
+        <h1><span class="prompt">></span> Jasmin Steinbrecher</h1>
+        <p class="title">Aerospace Engineer</p>
+        <p class="tagline">Making sure nothing crashes ... especially not the spacecraft</p>
+        <div class="hero__actions">
+          <a href="assets/resume.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            &#x2193; Download Resume
+          </a>
+          <a href="contact.html" class="btn btn--secondary">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title">About Me</h2>
+      <div class="about__text">
+        <p>Hi, I’m Jasmin. Here’s a peek at what I’ve been up to. I’m an aerospace engineer with a love for all things tech and innovation.</p>
+        <p style="margin-top:1rem;">I enjoy taking on tricky challenges and picking up new skills in areas I haven’t explored before. Have an exciting project in mind? Feel free to get in touch!</p>
+      </div>
+      <div class="status-bar">
+        <div class="status-item">
+          <span class="status-item__dot status-item__dot--online"></span>
+          Status: Online
+        </div>
+        <div class="status-item">
+          <span>Location: Munich, DE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;" id="skills">
+    <div class="container">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-item">Matlab</span>
+        <span class="skill-item">C/C++</span>
+        <span class="skill-item">Python</span>
+        <span class="skill-item">SolidWorks</span>
+        <span class="skill-item">OptiStruct</span>
+        <span class="skill-item">Microsoft Office</span>
+        <span class="skill-item">ArcGIS Pro</span>
+        <span class="skill-item">MagicDraw</span>
+        <span class="skill-item">R</span>
+        <span class="skill-item">Java Spring Boot</span>
+        <span class="skill-item">MAVLink</span>
+        <span class="skill-item">SITL simulation</span>
+        <span class="skill-item">Gazebo</span>
+        <span class="skill-item">Orbital Mechanics</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;" id="languages">
+    <div class="container">
+      <h2 class="section__title">Languages</h2>
+      <div class="lang-list">
+        <div class="lang-item">
+          <div class="lang-name">German</div>
+          <div class="lang-level">Native</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">Russian</div>
+          <div class="lang-level">Native</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">English</div>
+          <div class="lang-level">Fluent (C2)</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">French</div>
+          <div class="lang-level">Intermediate (B1)</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">Spanish</div>
+          <div class="lang-level">Beginner (A1)</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">Chinese</div>
+          <div class="lang-level">Beginner (A1)</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-name">Latin</div>
+          <div class="lang-level"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      &copy; Ad astra, one project at a time.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
